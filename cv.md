@@ -8,7 +8,7 @@ permalink: /cv/
 <h2>Education</h2>
 
 <div class="cv-entry">
-<h3>Dr. rer. nat. (ongoing)</h3>
+<h3>PhD (ongoing)</h3>
 <p class="cv-meta">Since May 2020 — University of Cologne</p>
 <p>Research on distributed optimization for flexibility management in distribution grids. Supervised in collaboration with TH Köln and the Cologne Institute for Renewable Energy (CIRE).</p>
 </div>

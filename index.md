@@ -11,7 +11,7 @@ layout: default
   </div>
 </div>
 
-As I am transitioning beyond academia, this site reflects my broader professional profile — from research and engineering to coding and teaching.
+This site reflects my broader professional profile — from research and engineering to coding and teaching. Feel free to reach out!
 
 ---
 
