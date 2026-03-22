@@ -1,31 +1,74 @@
----
-layout: compress
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} – {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container">
+      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
+          <a href="{{ '/research/' | relative_url }}"{% if page.url == '/research/' %} class="active"{% endif %}>Research</a>
+          <a href="{{ '/videos/' | relative_url }}"{% if page.url == '/videos/' %} class="active"{% endif %}>Videos</a>
+          <a href="{{ '/publications/' | relative_url }}"{% if page.url == '/publications/' %} class="active"{% endif %}>Publications</a>
+          <a href="{{ '/cv/' | relative_url }}"{% if page.url == '/cv/' %} class="active"{% endif %}>CV</a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span class="theme-icon" id="theme-icon">☀️</span>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
+  <main class="container">
     {{ content }}
+  </main>
 
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </div>
+  </footer>
 
-    {% include scripts.html %}
+  <script>
+    // Theme toggle
+    (function() {
+      var toggle = document.getElementById('theme-toggle');
+      var icon = document.getElementById('theme-icon');
+      var saved = localStorage.getItem('theme');
+      if (saved === 'warm') {
+        document.body.classList.add('theme-warm');
+        icon.textContent = '🌙';
+      }
+      toggle.addEventListener('click', function() {
+        document.body.classList.toggle('theme-warm');
+        var isWarm = document.body.classList.contains('theme-warm');
+        localStorage.setItem('theme', isWarm ? 'warm' : 'dark');
+        icon.textContent = isWarm ? '🌙' : '☀️';
+      });
+    })();
 
-  </body>
+    // Mobile nav toggle
+    (function() {
+      var btn = document.getElementById('nav-toggle');
+      var links = document.querySelector('.nav-links');
+      btn.addEventListener('click', function() {
+        links.classList.toggle('open');
+        btn.classList.toggle('open');
+      });
+    })();
+  </script>
+</body>
 </html>
