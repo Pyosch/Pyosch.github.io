@@ -4,72 +4,150 @@ title: Videos
 permalink: /videos/
 ---
 
-I create tutorials on YouTube to make open energy models more accessible. My first series covers **pvlib python**, a Python library for simulating photovoltaic energy systems. Whether you're a student, researcher, or energy enthusiast — I hope these tutorials help you get started.
+I create tutorials on YouTube to make open energy models more accessible. My series covers **pvlib python** (PV system simulation), **windpowerlib** (wind power simulation), and a general introduction to the **Anaconda** Python distribution.
 
 [Visit my YouTube channel →](https://www.youtube.com/@sbirk)
 
 ---
 
-## pvlib python Tutorial Series
-
-A step-by-step introduction to pvlib python for photovoltaic simulation — from the basics to more advanced topics.
-
-<!--
-  To add or update videos:
-  1. Go to your YouTube video
-  2. Copy the video ID from the URL (the part after v=)
-  3. Replace VIDEO_ID below with your actual video ID
-  4. Update the title and description
--->
+## Getting Started: Python & Anaconda
 
 <div class="video-entry">
-<h3>01: Introduction</h3>
-<p>An overview of pvlib python — what it does, why it's useful, and how to get started with photovoltaic simulation in Python.</p>
+<h3>Introduction to the Python Distribution Platform Anaconda</h3>
+<p>A beginner-friendly introduction to Anaconda — the most popular Python distribution for data science and scientific computing. Covers installation, environments, and the basics of getting Python ready for energy modelling.</p>
 <div class="video-container">
-<iframe src="https://www.youtube.com/embed/VIDEO_ID_01" allowfullscreen></iframe>
-</div>
-</div>
-
-<div class="video-entry">
-<h3>02: Installation & Setup</h3>
-<p>How to install pvlib python and set up your development environment.</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/VIDEO_ID_02" allowfullscreen></iframe>
-</div>
-</div>
-
-<div class="video-entry">
-<h3>03: Location & Weather Data</h3>
-<p>Working with location data and obtaining weather/irradiance data for PV simulations.</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/VIDEO_ID_03" allowfullscreen></iframe>
-</div>
-</div>
-
-<div class="video-entry">
-<h3>04: Solar Position</h3>
-<p>Calculating solar position (azimuth, elevation) for any location and time.</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/VIDEO_ID_04" allowfullscreen></iframe>
-</div>
-</div>
-
-<div class="video-entry">
-<h3>05: Irradiance Modeling</h3>
-<p>Understanding and modeling solar irradiance components — GHI, DNI, DHI and transposition to tilted surfaces.</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/VIDEO_ID_05" allowfullscreen></iframe>
-</div>
-</div>
-
-<div class="video-entry">
-<h3>06: PV System Modeling</h3>
-<p>Building a complete PV system model and simulating energy yield.</p>
-<div class="video-container">
-<iframe src="https://www.youtube.com/embed/VIDEO_ID_06" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/NOPK_0s10fA" allowfullscreen></iframe>
 </div>
 </div>
 
 ---
 
-*More videos are available on [my YouTube channel](https://www.youtube.com/@sbirk). The titles and video IDs above are placeholders — update them with your actual video IDs by replacing `VIDEO_ID_XX` in the source file.*
+## pvlib python Tutorial Series
+
+A step-by-step introduction to [pvlib python](https://pvlib-python.readthedocs.io/) for photovoltaic system simulation — from the very basics to advanced topics like tracking systems and spec-sheet-based modelling.
+
+<div class="video-entry">
+<h3>01: Introduction</h3>
+<p>An overview of pvlib python — what it does, why it's useful, and what you'll learn in this tutorial series.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/zKzhMQaNjDI" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>02: ModelChain and Location</h3>
+<p>Setting up a Location object and running a first simulation using pvlib's convenient ModelChain interface.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/qdoaU25k_XM" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>03: ModelChain and PVSystem</h3>
+<p>Building a PVSystem object to represent your solar installation and integrating it into the ModelChain workflow.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/gNgKSduzDLY" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>04: ModelChain and Clear Sky Model</h3>
+<p>Using pvlib's clear sky models to generate synthetic irradiance data when no measured data is available.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/-x7Css3YIUo" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>05: Add Modules to Your PV System</h3>
+<p>Working with pvlib's built-in module database to select real solar panels and add them to your system model.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/9wDhl6jyKmk" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>06: Get Data from PVGIS</h3>
+<p>Using pvlib's iotools to retrieve real measured irradiance and weather data from the EU's PVGIS database.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/OZwxLWRiOLw" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>07: Preprocess External Data</h3>
+<p>Preparing and formatting external weather data so it can be used as input for pvlib simulations.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/33mfPo-z9kM" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>08: Processing POA Data for a Specific Year</h3>
+<p>Handling plane-of-array (POA) irradiance data and adapting it to a representative simulation year.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/8kkovg_3Htk" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>09: iotools for Retrieving PVGIS Data</h3>
+<p>A deeper look at pvlib's iotools module and the different data formats available from the PVGIS API.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/s9EJTEluB_Q" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>10: Spec Sheet Based PV Modelling</h3>
+<p>Modelling a PV system using only data from a manufacturer's spec sheet — no database entry required.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/atXfLEJxl18" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>11: Fitting of Spec Sheet Based Model</h3>
+<p>Fitting the parameters of a spec-sheet-based PV model to match real measured data more accurately.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/prhQf0rP3g8" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>12: Single-Axis Tracking</h3>
+<p>Simulating a single-axis solar tracker that follows the sun throughout the day to maximise energy yield.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/xkN5QPnCpy8" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>13: Dual-Axis Tracking</h3>
+<p>Simulating a dual-axis tracker that follows both the daily path and the seasonal altitude of the sun.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/BUlirl_5E7U" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="video-entry">
+<h3>14: System with East–West Orientation</h3>
+<p>Modelling a bifacial or split PV system with panels facing both east and west — a common rooftop design.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/1RZm62LxnK4" allowfullscreen></iframe>
+</div>
+</div>
+
+---
+
+## windpowerlib Tutorial Series
+
+An introduction to [windpowerlib](https://windpowerlib.readthedocs.io/) — a Python library for modelling wind turbines and wind farms.
+
+<div class="video-entry">
+<h3>01: Introduction</h3>
+<p>An overview of windpowerlib — how to model wind turbines in Python, calculate power output from wind speed data, and get started with wind energy simulation.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/rZcen8KDY4E" allowfullscreen></iframe>
+</div>
+</div>
