@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="hero">
-  <img src="assets/images/profile.jpg" alt="Sascha Birk" class="hero-photo">
+  <img src="assets/images/20260310_Birk.jpg" alt="Sascha Birk" class="hero-photo">
   <div class="hero-text">
     <h1>Sascha Birk</h1>
     <p class="hero-tagline">Energy Systems Researcher · Engineer · Developer</p>
